@@ -105,6 +105,8 @@
     border-radius: 20px;
     padding: 5px;
     margin: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .pills div img {
