@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    background-color: rgb(0, 0, 51);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.logo img {
+    width: 75px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+
+.menu ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url("https://github.com/Mohak-Trivedi/xcruise-assets/blob/master/hero-cruise.png?raw=true");
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.text h1 {
+    margin-bottom: 10px;
+}
+
+.text p {
+    margin-bottom: 10px;
+}
+
+.hero button {
+    background-color: #ff4d00;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.discover {
+    margin: 5px;
+    padding: 5px;
+}
+
+.verticle-line {
+    width: 5px;
+    height: 100px;
+    background-color: orange;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0px 10px;
+}
+
+.heading-container {
+    margin: 5px;
+    padding: 5px;
+}
+
+.heading-container h2,
+.heading-container p {
+    padding: 5px 0px;
+    margin: 5px 0px;
+}
+
+.popular {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.pills {
+    display: flex;
+    flex-direction: row;
+}
+
+.pills div {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.pills div img {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+
+.destinations-banner {
+    position: relative;
+    margin: 10px;
+    box-shadow: 4px -3px 5px -2px rgba(0, 0, 0, 0.5);
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 1rem;
+}
+
+.destinations-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 10px;
+}
+
+.card {
+    position: relative;
+    cursor: pointer;
+    box-shadow: 4px -3px 5px -2px rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.bookmark {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(94, 86, 86, 0.329);
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookmark-img {
+    width: 20px;
+    height: 20px;
+}
+
+.card-text {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 1rem;
+}
+
+#contact {
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.contact-title {
+    padding: 2px;
+}
+
+.contact_info {
+    display: flex;
+    margin: 20px auto;
+    gap: 20px;
+    width: 95%;
+}
+
+hr {
+    width: 100px;
+    height: 3px;
+    background-color: orange;
+    border-style: none;
+    margin: 0 auto
+}
+
+.box {
+    align-content: center;
+    width: 100%;
+    border: 1px solid black;
+    height: 100px;
+}
+
+.box-title {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: white;
+    margin: 0px 10px;
+    padding: 0px 10px;
+}
+
+.footer-div {
+    padding: 5px 0px;
+}
+
+.footer-titles {
+    color: orange;
+    padding: 5px 0px;
+}
+
+
+.icon-images {
+    width: 23px;
+}
+
+.footer_rights {
+    text-align: center;
+    padding: 5px;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .verticle-line {
+        display: none;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading-container {
+        margin: 5px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .destinations-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact_info {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-div {
+        padding: 5px 0px;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .verticle-line {
+        display: none;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .heading-container {
+        margin: 5px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .popular {
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .pills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pills div {
+        width: 130px;;
+    }
+
+    .destinations-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact_info {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
